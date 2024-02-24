@@ -7,7 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div id="container">
+    <h1>Etch-a-sketch</h1>
+    <h3>Start drawing!</h3>
+    <div id="buttons">
+      <button type="button" class="resize">Resize</button>
+      <button type="button" class="reset">Reset</button>
+      <button type="button" class="clear">Clear</button>
+      <div id="switch">
+        <input type="radio" id="black" name="color" value="Black" checked />
+        <label for="black">Black</label>
+        <input type="radio" id="shade" name="color" value="shade" checked />
+        <label for="shade">Shade</label>
+        <input type="radio" id="rgb" name="color" value="RGB" />
+        <label for="rgb">RGB</label>
+      </div>
+    </div>
+    <div id="grid-container"><div class="grid"></div></div>
+  </div>
+  <p class="small">Made by <a href="https://github.com/lakeebs">John Lee</a></p>
   <script src="script.js"></script>
 </body>
 </html>
